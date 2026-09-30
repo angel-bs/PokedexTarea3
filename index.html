@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokédex | Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                🔴 Pokédex
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Mostrar menú"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pokemons">
+                            Pokémon
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tipos">
+                            Tipos
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         CABECERA
+    ========================== -->
+
+    <header class="hero text-center py-5">
+
+        <div class="container">
+
+            <h1 class="display-4 fw-bold">
+                Pokédex
+            </h1>
+
+            <p class="lead">
+                Descubre información sobre tus Pokémon favoritos
+            </p>
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-8 col-lg-6">
+
+                    <div class="input-group">
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Buscar Pokémon..."
+                        >
+
+                        <button class="btn btn-dark">
+                            🔎 Buscar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         POKÉMON
+    ========================== -->
+
+    <main id="pokemons" class="container py-5">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Pokémon destacados
+            </h2>
+
+            <p class="text-muted">
+                Algunos de los Pokémon más conocidos
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- BULBASAUR -->
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                <div class="card pokemon-card h-100 shadow-sm">
+
+                    <div class="pokemon-image bg-success-subtle">
+
+                        <img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                            class="card-img-top"
+                            alt="Bulbasaur"
+                        >
+
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <span class="badge bg-secondary">
+                            #001
+                        </span>
+
+                        <h3 class="card-title mt-2">
+                            Bulbasaur
+                        </h3>
+
+                        <span class="badge bg-success">
+                            Planta
+                        </span>
+
+                        <span class="badge bg-danger">
+                            Veneno
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHARMANDER -->
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                <div class="card pokemon-card h-100 shadow-sm">
+
+                    <div class="pokemon-image bg-warning-subtle">
+
+                        <img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+                            class="card-img-top"
+                            alt="Charmander"
+                        >
+
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <span class="badge bg-secondary">
+                            #004
+                        </span>
+
+                        <h3 class="card-title mt-2">
+                            Charmander
+                        </h3>
+
+                        <span class="badge bg-danger">
+                            Fuego
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SQUIRTLE -->
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                <div class="card pokemon-card h-100 shadow-sm">
+
+                    <div class="pokemon-image bg-info-subtle">
+
+                        <img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
+                            class="card-img-top"
+                            alt="Squirtle"
+                        >
+
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <span class="badge bg-secondary">
+                            #007
+                        </span>
+
+                        <h3 class="card-title mt-2">
+                            Squirtle
+                        </h3>
+
+                        <span class="badge bg-primary">
+                            Agua
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PIKACHU -->
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                <div class="card pokemon-card h-100 shadow-sm">
+
+                    <div class="pokemon-image bg-warning-subtle">
+
+                        <img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+                            class="card-img-top"
+                            alt="Pikachu"
+                        >
+
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <span class="badge bg-secondary">
+                            #025
+                        </span>
+
+                        <h3 class="card-title mt-2">
+                            Pikachu
+                        </h3>
+
+                        <span class="badge bg-warning text-dark">
+                            Eléctrico
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MEWTWO -->
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                <div class="card pokemon-card h-100 shadow-sm">
+
+                    <div class="pokemon-image bg-secondary-subtle">
+
+                        <img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png"
+                            class="card-img-top"
+                            alt="Mewtwo"
+                        >
+
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <span class="badge bg-secondary">
+                            #150
+                        </span>
+
+                        <h3 class="card-title mt-2">
+                            Mewtwo
+                        </h3>
+
+                        <span class="badge bg-info text-dark">
+                            Psíquico
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MEW -->
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                <div class="card pokemon-card h-100 shadow-sm">
+
+                    <div class="pokemon-image bg-danger-subtle">
+
+                        <img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
+                            class="card-img-top"
+                            alt="Mew"
+                        >
+
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <span class="badge bg-secondary">
+                            #151
+                        </span>
+
+                        <h3 class="card-title mt-2">
+                            Mew
+                        </h3>
+
+                        <span class="badge bg-info text-dark">
+                            Psíquico
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         TIPOS
+    ========================== -->
+
+    <section id="tipos" class="bg-light py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-4">
+
+                <h2 class="fw-bold">
+                    Tipos de Pokémon
+                </h2>
+
+                <p class="text-muted">
+                    Explora los diferentes tipos
+                </p>
+
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+
+                <button class="btn btn-danger">
+                    Fuego
+                </button>
+
+                <button class="btn btn-primary">
+                    Agua
+                </button>
+
+                <button class="btn btn-success">
+                    Planta
+                </button>
+
+                <button class="btn btn-warning">
+                    Eléctrico
+                </button>
+
+                <button class="btn btn-info">
+                    Hielo
+                </button>
+
+                <button class="btn btn-secondary">
+                    Roca
+                </button>
+
+                <button class="btn btn-dark">
+                    Siniestro
+                </button>
+
+                <button class="btn btn-light border">
+                    Normal
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <p class="mb-1">
+                <strong>Pokédex</strong>
+            </p>
+
+            <p class="mb-0 text-secondary">
+                Plantilla desarrollada con Bootstrap 5
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

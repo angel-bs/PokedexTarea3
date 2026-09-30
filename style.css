@@ -1,0 +1,82 @@
+body {
+    background-color: #f8f9fa;
+}
+
+
+/* CABECERA */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #dc3545,
+        #ff6b6b
+    );
+
+    color: white;
+}
+
+
+/* TARJETAS */
+
+.pokemon-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* IMÁGENES */
+
+.pokemon-image {
+    height: 220px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.pokemon-image img {
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+
+    transition: transform 0.2s ease;
+}
+
+.pokemon-card:hover .pokemon-image img {
+    transform: scale(1.1);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .pokemon-image {
+        height: 200px;
+    }
+
+    .pokemon-image img {
+        width: 160px;
+        height: 160px;
+    }
+
+}
